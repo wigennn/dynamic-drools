@@ -15,6 +15,9 @@
 - freemarker (模板引擎)
 - mysql
 
+## 项目结构-包划分
+![项目结构-包划分](/drools-demo/imgs/项目结构-包划分.png)
+
 ## 执行流程
 ![执行流程](/drools-demo/imgs/发票检查流程.png)
 
