@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration>
     <!--驱动包的路径-->
-    <classPathEntry location="G:\mvn_repository\mysql\mysql-connector-java\5.1.34\mysql-connector-java-5.1.34.jar"/>
+    <classPathEntry location="E:\mvn_repository\mysql\mysql-connector-java\5.1.34\mysql-connector-java-5.1.34.jar"/>
     <context id="DB2Tables" targetRuntime="MyBatis3">
         <!--注释-->
         <commentGenerator>
@@ -44,7 +44,7 @@
         </javaClientGenerator>
 
         <!--生成与表对应的类名-->
-        <table schema="drools" tableName="rule_info" domainObjectName="RuleInfoEntity"
+        <table schema="drools" tableName="invoice_rule_detail" domainObjectName="InvoiceRuleDetail"
                enableInsert="true" enableSelectByExample="false"
                enableDeleteByPrimaryKey="false" enableDeleteByExample="false"
                enableCountByExample="false" enableUpdateByExample="false"

@@ -1,7 +1,9 @@
 package rules;
-dialect  "mvel"
+//dialect  "mvel"
 
 rule "vat-invoice-rule"
     when
+    eval(true)
     then
+    System.out.println("hello world");
 end

@@ -10,7 +10,7 @@ package com.redbyte.wigen.droolsdemo.common.enums;
 public enum CompareTypeEnum {
     大于(">", "大于"),
     小于("<", "小于"),
-    等于("=", "等于"),
+    等于("==", "等于"),
     不大于("<=", "不大于"),
     不小于(">=", "不小于"),
     包含("", "包含"),
