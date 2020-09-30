@@ -30,6 +30,20 @@
     - 读取规则
     - 校验
 
+## 测试类
+```$xslt
+1st.建库drools，根据sql建表
+2nd.执行测试类方法
+DroolsDemoApplicationTests
+
+添加定义规则数据方法:insertInvoiceRuleDetail
+
+计算drools规则并保存方法:saveRule
+
+测试验证数据方法:getTrainInvoiceTest
+```
+
+
 ## 票种
 ### 增值税票
 ### 火车发票票
