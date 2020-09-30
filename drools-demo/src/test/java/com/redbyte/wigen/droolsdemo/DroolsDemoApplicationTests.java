@@ -92,7 +92,7 @@ class DroolsDemoApplicationTests {
         RuleTemplateDTO templateDTO = new RuleTemplateDTO();
         templateDTO.setPackageVal("testPackageName");
         templateDTO.setImportVals(Arrays.asList("testImport"));
-        templateDTO.setGolbal("testGlobal");
+        templateDTO.setGlobal("testGlobal");
         templateDTO.setRuleName("testRuleName");
         templateDTO.setWhenVal("testWhen");
         templateDTO.setThenVal("testThen");

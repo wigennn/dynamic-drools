@@ -4,7 +4,7 @@ package ${packageVal};
 import ${importVal};
 </#list>
 
-global ${golbal};
+global ${global};
 
 rule "rule_${ruleName}"
     when

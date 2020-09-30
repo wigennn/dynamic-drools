@@ -20,7 +20,7 @@ public class RuleTemplateDTO implements Serializable {
 
     private List<String> importVals;
 
-    private String golbal;
+    private String global;
 
     private String ruleName;
 

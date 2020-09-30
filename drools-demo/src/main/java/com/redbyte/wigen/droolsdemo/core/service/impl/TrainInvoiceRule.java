@@ -53,7 +53,7 @@ public class TrainInvoiceRule implements RuleGenerator {
         RuleTemplateDTO dto = new RuleTemplateDTO();
         dto.setPackageVal("invoice.train");
         dto.setImportVals(Arrays.asList(TrainInvoiceDTO.class.getName()));
-        dto.setGolbal(RuleExecResult.class.getName() + " result");
+        dto.setGlobal(RuleExecResult.class.getName() + " result");
         dto.setRuleName(invoiceType + "_" + companyId);
         dto.setWhenVal("TrainInvoiceDTO(" + whenVal(ruleDetails) + ")");
         dto.setThenVal("result.setResult(\"提示语````````````````````\", \"预警通过\");");
