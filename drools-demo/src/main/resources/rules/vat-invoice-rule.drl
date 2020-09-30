@@ -1,0 +1,7 @@
+package rules;
+dialect  "mvel"
+
+rule "vat-invoice-rule"
+    when
+    then
+end
