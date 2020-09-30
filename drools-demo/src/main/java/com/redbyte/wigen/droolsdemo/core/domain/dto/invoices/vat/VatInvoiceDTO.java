@@ -1,8 +1,8 @@
-package com.redbyte.wigen.droolsdemo.core.domain.dto.vat;
+package com.redbyte.wigen.droolsdemo.core.domain.dto.invoices.vat;
 
-import com.redbyte.wigen.droolsdemo.core.domain.dto.BaseInvoiceDTO;
-import com.redbyte.wigen.droolsdemo.core.domain.dto.InvoiceBuyerInfoDTO;
-import com.redbyte.wigen.droolsdemo.core.domain.dto.InvoiceSalerInfoDTO;
+import com.redbyte.wigen.droolsdemo.core.domain.dto.invoices.BaseInvoiceDTO;
+import com.redbyte.wigen.droolsdemo.core.domain.dto.invoices.InvoiceBuyerInfoDTO;
+import com.redbyte.wigen.droolsdemo.core.domain.dto.invoices.InvoiceSalerInfoDTO;
 import lombok.Data;
 
 import java.io.Serializable;

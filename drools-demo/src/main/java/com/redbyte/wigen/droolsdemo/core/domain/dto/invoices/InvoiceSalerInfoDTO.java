@@ -1,4 +1,4 @@
-package com.redbyte.wigen.droolsdemo.core.domain.dto;
+package com.redbyte.wigen.droolsdemo.core.domain.dto.invoices;
 
 import lombok.Data;
 
