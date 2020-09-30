@@ -4,6 +4,8 @@ package ${packageVal};
 import ${importVal};
 </#list>
 
+global ${golbal};
+
 rule "rule_${ruleName}"
     when
         ${whenVal}

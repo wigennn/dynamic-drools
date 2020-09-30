@@ -44,7 +44,7 @@
         </javaClientGenerator>
 
         <!--生成与表对应的类名-->
-        <table schema="drools" tableName="invoice_rule_detail" domainObjectName="InvoiceRuleDetail"
+        <table schema="drools" tableName="invoice_rule" domainObjectName="InvoiceRule"
                enableInsert="true" enableSelectByExample="false"
                enableDeleteByPrimaryKey="false" enableDeleteByExample="false"
                enableCountByExample="false" enableUpdateByExample="false"

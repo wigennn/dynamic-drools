@@ -17,10 +17,16 @@ public enum CompareTypeEnum {
     不包含("", "不包含"),
     范围("", "范围");
 
+    private String symbol;
     private String compareName;
 
     CompareTypeEnum(String symbol, String compareName) {
+        this.symbol = symbol;
         this.compareName = compareName;
+    }
+
+    public String getSymbol() {
+        return symbol;
     }
 
     public String getCompareName() {

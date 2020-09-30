@@ -1,59 +1,81 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.redbyte.wigen.droolsdemo.core.dao.InvoiceRuleDetailMapper" >
-  <insert id="insert" parameterType="com.redbyte.wigen.droolsdemo.core.domain.entity.InvoiceRuleDetail" >
-    insert into invoice_rule_detail (id, invoice_type, invoice_field, 
-      compate_type, compare_val, create_time, 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.redbyte.wigen.droolsdemo.core.dao.InvoiceRuleDetailMapper">
+
+
+  <insert id="insert" parameterType="com.redbyte.wigen.droolsdemo.core.domain.entity.InvoiceRuleDetail">
+    insert into invoice_rule_detail (id, company_id, invoice_type, 
+      invoice_field, compare_type, compare_val, 
+      handler, hint, create_time, 
       update_time)
-    values (#{id,jdbcType=BIGINT}, #{invoiceType,jdbcType=VARCHAR}, #{invoiceField,jdbcType=VARCHAR}, 
-      #{compateType,jdbcType=VARCHAR}, #{compareVal,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+    values (#{id,jdbcType=BIGINT}, #{companyId,jdbcType=VARCHAR}, #{invoiceType,jdbcType=VARCHAR}, 
+      #{invoiceField,jdbcType=VARCHAR}, #{compareType,jdbcType=VARCHAR}, #{compareVal,jdbcType=VARCHAR}, 
+      #{handler,jdbcType=TINYINT}, #{hint,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
       #{updateTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.redbyte.wigen.droolsdemo.core.domain.entity.InvoiceRuleDetail" >
+  <insert id="insertSelective" parameterType="com.redbyte.wigen.droolsdemo.core.domain.entity.InvoiceRuleDetail">
     insert into invoice_rule_detail
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
         id,
       </if>
-      <if test="invoiceType != null" >
+      <if test="companyId != null">
+        company_id,
+      </if>
+      <if test="invoiceType != null">
         invoice_type,
       </if>
-      <if test="invoiceField != null" >
+      <if test="invoiceField != null">
         invoice_field,
       </if>
-      <if test="compateType != null" >
-        compate_type,
+      <if test="compareType != null">
+        compare_type,
       </if>
-      <if test="compareVal != null" >
+      <if test="compareVal != null">
         compare_val,
       </if>
-      <if test="createTime != null" >
+      <if test="handler != null">
+        handler,
+      </if>
+      <if test="hint != null">
+        hint,
+      </if>
+      <if test="createTime != null">
         create_time,
       </if>
-      <if test="updateTime != null" >
+      <if test="updateTime != null">
         update_time,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
         #{id,jdbcType=BIGINT},
       </if>
-      <if test="invoiceType != null" >
+      <if test="companyId != null">
+        #{companyId,jdbcType=VARCHAR},
+      </if>
+      <if test="invoiceType != null">
         #{invoiceType,jdbcType=VARCHAR},
       </if>
-      <if test="invoiceField != null" >
+      <if test="invoiceField != null">
         #{invoiceField,jdbcType=VARCHAR},
       </if>
-      <if test="compateType != null" >
-        #{compateType,jdbcType=VARCHAR},
+      <if test="compareType != null">
+        #{compareType,jdbcType=VARCHAR},
       </if>
-      <if test="compareVal != null" >
+      <if test="compareVal != null">
         #{compareVal,jdbcType=VARCHAR},
       </if>
-      <if test="createTime != null" >
+      <if test="handler != null">
+        #{handler,jdbcType=TINYINT},
+      </if>
+      <if test="hint != null">
+        #{hint,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
         #{createTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="updateTime != null" >
+      <if test="updateTime != null">
         #{updateTime,jdbcType=TIMESTAMP},
       </if>
     </trim>
